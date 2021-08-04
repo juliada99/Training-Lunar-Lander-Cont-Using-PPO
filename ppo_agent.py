@@ -222,8 +222,8 @@ class Agent:
 
 
     def save_weights(self):
-        self._actor.save_weights(self._save_model_path + "/policy_w/actor_ppo", save_format='tf')
-        self._critic.save_weights(self._save_model_path + "/policy_w/critic_ppo", save_format='tf')
+        self._actor.save_weights(self._save_model_path + "/policy_weights/actor_ppo", save_format='tf')
+        self._critic.save_weights(self._save_model_path + "/policy_weights/critic_ppo", save_format='tf')
 
     def load_weights(self):
         self._actor.load_weights(self._save_model_path + "/policy_w/actor_ppo")
